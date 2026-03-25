@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moiz Hassan — Frontend Developer & Web Designer</title>
+  <meta name="description" content="Portfolio of Moiz Hassan — Motivated Frontend Developer experienced in building responsive websites and user interfaces using HTML, CSS, JavaScript, React.js, and modern web technologies." />
+  <meta name="keywords" content="Moiz Hassan, Frontend Developer, Web Designer, React, JavaScript, Portfolio" />
+  <meta name="author" content="Moiz Hassan" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Moiz Hassan — Frontend Developer & Web Designer" />
+  <meta property="og:description" content="Motivated Frontend Developer experienced in building responsive websites and user interfaces." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">M<span>oiz</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Available for work
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Moiz Hassan</span>
+        </h1>
+        <div class="hero-title">
+          <span id="typing-text"></span>
+          <span class="typing-cursor"></span>
+        </div>
+        <p class="hero-description">
+          Motivated Frontend Developer from Lahore, Pakistan — experienced in building responsive websites and user interfaces with clean UI, great UX, and modern web technologies.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class="fas fa-eye"></i> View Projects
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3><span data-count="2" data-suffix="+">0</span></h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3><span data-count="8" data-suffix="+">0</span></h3>
+            <p>Technologies</p>
+          </div>
+          <div class="stat-item">
+            <h3><span data-count="100" data-suffix="%">0</span></h3>
+            <p>Dedication</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="avatar.png" alt="Moiz Hassan — Frontend Developer" />
+        </div>
+        <div class="hero-float-card float-card-1">
+          <i class="fab fa-react" style="color: #61dafb;"></i>
+          React.js Developer
+        </div>
+        <div class="hero-float-card float-card-2">
+          <i class="fas fa-code" style="color: #06b6d4;"></i>
+          Clean Code Lover
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-subtitle">A passionate developer turning ideas into beautiful, functional web experiences.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper glass-card reveal">
+          <img src="avatar.png" alt="Moiz Hassan" />
+        </div>
+        <div class="about-text reveal">
+          <h3>Frontend Developer & <span class="gradient-text">Web Designer</span></h3>
+          <p>
+            I'm Moiz Hassan, a motivated Frontend Developer based in Lahore, Pakistan. I'm passionate about creating clean UI designs, improving user experience, and continuously learning modern frontend frameworks and tools.
+          </p>
+          <p>
+            Known for adaptability, teamwork, and continuous learning, I specialize in building responsive websites using HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, and React.js. I have experience collaborating on team-based projects and delivering quality work.
+          </p>
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <i class="fas fa-user"></i>
+              <div>
+                <div class="info-label">Name</div>
+                <div class="info-value">Moiz Hassan</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <div class="info-label">Location</div>
+                <div class="info-value">Lahore, Pakistan</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <div class="info-label">Email</div>
+                <div class="info-value">sheikhmoeez756@gmail.com</div>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-language"></i>
+              <div>
+                <div class="info-label">Languages</div>
+                <div class="info-value">English, Urdu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Tools and technologies I use to bring ideas to life.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Frontend Development -->
+        <div class="glass-card skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon frontend"><i class="fas fa-code"></i></div>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">HTML5</span>
+                <span class="skill-item-percent">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">CSS3 / Tailwind / Bootstrap</span>
+                <span class="skill-item-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">JavaScript (ES6+)</span>
+                <span class="skill-item-percent">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">React.js</span>
+                <span class="skill-item-percent">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">Responsive Web Design</span>
+                <span class="skill-item-percent">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="glass-card skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon tools"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">Git & GitHub</span>
+                <span class="skill-item-percent">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">VS Code</span>
+                <span class="skill-item-percent">92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">Chrome DevTools</span>
+                <span class="skill-item-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-item-name">Figma</span>
+                <span class="skill-item-percent">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-percent="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="glass-card skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon concepts"><i class="fas fa-lightbulb"></i></div>
+            <h3>Concepts</h3>
+          </div>
+          <div class="skill-tags" style="padding-top: 4px;">
+            <span class="skill-tag">UI/UX Basics</span>
+            <span class="skill-tag">REST API Integration</span>
+            <span class="skill-tag">Cross-Browser Compatibility</span>
+            <span class="skill-tag">Mobile-First Design</span>
+            <span class="skill-tag">Semantic HTML</span>
+            <span class="skill-tag">Accessibility</span>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="glass-card skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon other"><i class="fas fa-star"></i></div>
+            <h3>Other Skills</h3>
+          </div>
+          <div class="skill-tags" style="padding-top: 4px;">
+            <span class="skill-tag">Office Automation</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Quick Learner</span>
+            <span class="skill-tag">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent work that showcases my skills and experience.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Prodigilog -->
+        <div class="glass-card project-card reveal">
+          <div class="project-image">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3>Prodigilog</h3>
+            <p>A web development project featuring a fully responsive layout with modern navigation, landing pages, and engaging content sections.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-circle"></i> Frontend layout with navigation & landing pages</li>
+              <li><i class="fas fa-circle"></i> Responsive design for multi-device support</li>
+              <li><i class="fas fa-circle"></i> Engaging content sections and user flow</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boldo -->
+        <div class="glass-card project-card reveal">
+          <div class="project-image">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+            <h3>Boldo</h3>
+            <p>A frontend UI and web design project built using Bootstrap with a focus on clean visual hierarchy and pixel-perfect responsiveness.</p>
+            <ul class="project-features">
+              <li><i class="fas fa-circle"></i> UI layout based on design reference</li>
+              <li><i class="fas fa-circle"></i> Clean visual hierarchy & typography</li>
+              <li><i class="fas fa-circle"></i> Mobile-friendly responsive adjustments</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Career Path</span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey and hands-on experience.</p>
+      </div>
+      <div class="timeline">
+        <div class="glass-card timeline-item reveal">
+          <div class="timeline-date">
+            <i class="fas fa-calendar-alt"></i> Academic & Practical Projects
+          </div>
+          <h3>Web Development Intern</h3>
+          <h4>Aptech Institute</h4>
+          <ul>
+            <li><i class="fas fa-circle"></i> Built responsive website interfaces using HTML5, CSS3, and JavaScript</li>
+            <li><i class="fas fa-circle"></i> Designed UI layouts using Bootstrap and basic Figma workflow</li>
+            <li><i class="fas fa-circle"></i> Collaborated on team-based website improvements and usability fixes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Background</h2>
+        <p class="section-subtitle">My educational journey and qualifications.</p>
+      </div>
+      <div class="education-grid">
+        <div class="glass-card education-card reveal">
+          <div class="education-icon diploma"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Diploma in ACCP AI</h3>
+          <h4>Aptech Institute</h4>
+          <span class="education-status status-progress">
+            <i class="fas fa-spinner"></i> In Progress
+          </span>
+        </div>
+        <div class="glass-card education-card reveal">
+          <div class="education-icon school"><i class="fas fa-school"></i></div>
+          <h3>Intermediate</h3>
+          <h4>Secondary Education Board</h4>
+          <span class="education-status status-complete">
+            <i class="fas fa-check-circle"></i> Completed
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hello? Let's connect!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="glass-card contact-info-card">
+            <div class="icon-box email"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>sheikhmoeez756@gmail.com</p>
+            </div>
+          </div>
+          <div class="glass-card contact-info-card">
+            <div class="icon-box phone"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 313 0607607</p>
+            </div>
+          </div>
+          <div class="glass-card contact-info-card">
+            <div class="icon-box location"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Lahore, Pakistan</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:sheikhmoeez756@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="glass-card contact-form reveal">
+          <h3>Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">M<span>oiz</span></a>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 Moiz Hassan. All rights reserved. Built with <i class="fas fa-heart" style="color: #ec4899;"></i> and code.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
