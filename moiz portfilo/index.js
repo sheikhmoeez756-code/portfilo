@@ -275,9 +275,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typingEl) {
     new TypingEffect(typingEl, [
       'Frontend Developer',
-      'Web Designer',
-      'UI/UX Enthusiast',
+      'Next.js Developer',
       'React.js Developer',
+      'Building Scalable Web Apps',
     ]);
   }
 
