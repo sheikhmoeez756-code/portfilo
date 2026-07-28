@@ -222,18 +222,39 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.btn-submit');
     const originalText = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-    btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/sheikhmoeez756@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: form.name.value,
+          email: form.email.value,
+          subject: form.subject.value,
+          message: form.message.value,
+          _subject: 'Portfolio contact: ' + form.subject.value,
+        }),
+      });
+      if (!response.ok) throw new Error('Request failed');
+      btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      form.reset();
+    } catch (err) {
+      btn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed — email me instead';
+      btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+    }
 
     setTimeout(() => {
       btn.innerHTML = originalText;
       btn.style.background = '';
-      form.reset();
-    }, 3000);
+      btn.disabled = false;
+    }, 4000);
   });
 }
 

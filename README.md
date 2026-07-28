@@ -17,7 +17,9 @@ A single-page, dark-themed portfolio showcasing my skills, experience, and proje
 - **Hero** — animated intro with a typing effect and interactive particle background
 - **About** — background, location, and a snapshot of who I am
 - **Skills** — animated proficiency bars (HTML, CSS, JavaScript, React, Next.js, TypeScript…) and tool tags
-- **Projects** — featured work with live demo & source links:
+- **Projects** — featured work with live screenshots, demo & source links:
+  - **Weather App** — React + TypeScript + Tailwind PWA with live forecasts & offline support
+  - **Calculator** — glassmorphism scientific calculator (single-file, zero dependencies)
   - **Kara** — Next.js luxury car platform
   - **Gulls Mart** — front-end storefront
   - **Bag Bag** — luxury bag store
@@ -33,21 +35,21 @@ A single-page, dark-themed portfolio showcasing my skills, experience, and proje
 
 ## 📦 Getting Started
 
-It's a static site — no build step. The source lives in the `moiz portfilo/` folder.
+It's a static site — no build step.
 
 ```bash
-# open moiz portfilo/index.html in a browser, or serve it:
-npx serve "moiz portfilo"
+# open index.html in a browser, or serve it:
+npx serve .
 ```
 
 ## 📁 Project Structure
 
 ```
-moiz portfilo/
 ├── index.html   # All sections
 ├── index.css    # Dark theme, layout & responsive rules
-├── index.js     # Typing effect, particles, scroll reveals, counters
-└── avatar.png   # Profile image
+├── index.js     # Typing effect, particles, scroll reveals, contact form
+├── avatar.png   # Profile image
+└── images/      # Project screenshots (WebP)
 ```
 
 ## 👤 Author
