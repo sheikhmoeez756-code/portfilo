@@ -48,7 +48,7 @@ npx serve .
 ├── index.html   # All sections
 ├── index.css    # Dark theme, layout & responsive rules
 ├── index.js     # Typing effect, particles, scroll reveals, contact form
-├── avatar.png   # Profile image
+├── avatar.webp   # Profile image
 └── images/      # Project screenshots (WebP)
 ```
 
