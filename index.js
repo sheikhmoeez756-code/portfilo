@@ -295,10 +295,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingEl = document.getElementById('typing-text');
   if (typingEl) {
     new TypingEffect(typingEl, [
-      'Frontend Developer',
-      'Next.js Developer',
-      'React.js Developer',
-      'Building Scalable Web Apps',
+      'React & Next.js Developer',
+      'TypeScript Specialist',
+      'Unit & E2E Tested',
+      'Shipped with CI',
     ]);
   }
 
