@@ -1451,3 +1451,21 @@ img { max-width: 100%; display: block; }
     font-size: 0.78rem;
   }
 }
+
+/* ----- Timeline lead paragraph and closing note ----- */
+.timeline-intro {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 14px 0 4px;
+}
+
+.timeline-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-glass);
+}
