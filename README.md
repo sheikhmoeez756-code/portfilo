@@ -1,58 +1,60 @@
 # Abdul Moeez Hassan — Developer Portfolio
 
-> Personal portfolio of Abdul Moeez Hassan — a Frontend Developer specializing in Next.js, React, and building modern, responsive, scalable web applications.
+> Personal portfolio of Abdul Moeez Hassan — a React & Next.js developer building tested, typed e-commerce and SaaS front ends.
 
 **🔗 Live site:** [sheikhmoeez756-code.github.io/portfilo](https://sheikhmoeez756-code.github.io/portfilo/)
 
-![HTML5](https://img.shields.io/badge/HTML5-e34f26) ![CSS3](https://img.shields.io/badge/CSS3-1572b6) ![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e)
+![Next.js](https://img.shields.io/badge/Next.js-16-000) ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6) ![Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8) ![Motion](https://img.shields.io/badge/Motion-Framer-ff0055)
 
----
+## ✨ Highlights
 
-## ✨ Overview
+- **Motion design** with Framer Motion — word-by-word text reveals, rotating hero word, scroll-linked parallax, sticky stacking project cards, scroll-drawn timeline
+- **Lenis** smooth scrolling and a scroll progress bar
+- **⌘K / Ctrl+K command palette** (cmdk) — jump to sections, copy email, switch theme, open links
+- **Light / dark theme** with a circular View Transitions reveal
+- Cursor-following spotlight cards, magnetic buttons, infinite tech marquee, animated stat counters
+- Contact form with floating labels, client-side validation and loading / success / error states
+- Respects `prefers-reduced-motion`; semantic HTML, keyboard focus states, ARIA labels
+- SEO: metadata, Open Graph, JSON-LD `Person` schema, sitemap
 
-A single-page, dark-themed portfolio showcasing my skills, experience, and projects. Built from scratch with vanilla HTML, CSS, and JavaScript — featuring a particle-canvas hero, animated typing effect, scroll reveals, and animated skill bars.
+## 🛠️ Stack
 
-## 🚀 Sections
+Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS 4 · Motion · Lenis · next-themes · cmdk · react-icons
 
-- **Hero** — animated intro with a typing effect and interactive particle background
-- **About** — background, location, and a snapshot of who I am
-- **Skills** — animated proficiency bars (HTML, CSS, JavaScript, React, Next.js, TypeScript…) and tool tags
-- **Projects** — featured work with live screenshots, demo & source links:
-  - **Weather App** — React + TypeScript + Tailwind PWA with live forecasts & offline support
-  - **Calculator** — glassmorphism scientific calculator (single-file, zero dependencies)
-  - **Kara** — Next.js luxury car platform
-  - **Gulls Mart** — front-end storefront
-  - **Bag Bag** — luxury bag store
-- **Experience** — Web Development Intern & freelance Web Developer
-- **Education**, **Contact** form, and social links
-
-## 🛠️ Tech Stack
-
-- **HTML5 / CSS3 / JavaScript (ES6+)**
-- Google Fonts (Inter + Outfit), Font Awesome icons
-- Canvas API for the particle background, IntersectionObserver for scroll animations
-- **Deployment:** GitHub Pages
-
-## 📦 Getting Started
-
-It's a static site — no build step.
+## 📦 Getting started
 
 ```bash
-# open index.html in a browser, or serve it:
-npx serve .
+npm install
+npm run dev         # http://localhost:3000
+npm run build       # static export to ./out
+npm run lint && npm run typecheck
 ```
 
-## 📁 Project Structure
+## 🚀 Deployment
+
+Pushing to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): lint → type-check → build with `PAGES_BASE_PATH=/portfilo` → publish `out/` to GitHub Pages.
+In the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+## 📁 Structure
 
 ```
-├── index.html   # All sections
-├── index.css    # Dark theme, layout & responsive rules
-├── index.js     # Typing effect, particles, scroll reveals, contact form
-├── avatar.webp   # Profile image
-└── images/      # Project screenshots (WebP)
+src/
+├── app/            # routes: layout, page, not-found, sitemap
+├── config/         # env, base path, asset() helper
+├── screens/        # page-level components (home/, notFound/)
+└── shared/
+    ├── components/ # Navbar, Footer, CommandPalette, Button, Reveal, SplitText…
+    ├── constants/  # links, projects, skills, section ids
+    ├── hooks/      # useActiveSection, useLocalTime, useMediaQuery…
+    ├── i18n/       # all user-facing copy (en.ts)
+    ├── services/   # contact form, theme transition, palette events
+    ├── themes/     # motion easing / spring constants (colours live in globals.css)
+    └── utils/
 ```
+
+To edit text, change `src/shared/i18n/en.ts`. To add a project, add an entry to `src/shared/constants/projects.ts` and its copy under `work.projects` in `en.ts`.
 
 ## 👤 Author
 
-**Abdul Moeez Hassan** — Frontend Developer · Lahore, Pakistan
-[GitHub](https://github.com/sheikhmoeez756-code) · [LinkedIn](https://www.linkedin.com/in/abdul-moeez-hassan-670191332/)
+**Abdul Moeez Hassan** — Lahore, Pakistan
+[GitHub](https://github.com/sheikhmoeez756-code) · [LinkedIn](https://www.linkedin.com/in/abdul-moeez-hassan-670191332/) · [Upwork](https://www.upwork.com/freelancers/~010b02734a3d111866)
